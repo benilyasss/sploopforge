@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+<title>Hat Macros | Sploop.ahk</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="index.js"></script>
+
+</head>
+
+<body>
+<div class="tab">
+  <a class="tablinks" href="Home.html">Home</a><br>
+  <a class="tablinks" href="macros.html">Macros</a><br>
+  <a class="tablinks" href="hatmacros.html">Hat macros</a><br>
+  <a class="tablinks"  style="color:red;" href="toggleloop.html">Toggle Loop</a><br>
+</div>
+
+<div class="content">
+<h1>Creating Toggle loop</h1><br>
+<p>For example, when you open it, it will be a loop. For example, we will do this. For example, we will Code Autoheal.</p>
+<div class="kodlar">
+<pre><code class="autohotkey">
+settimer, autoheal, 180
+
+*$~Ctrl::Toggle:=!Toggle 
+autoheal:
+if !Toggle
+Return
+Send, q{space}%weapon%
+Return
+</code></pre>
+  <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+</div>
+  <p style="color:red;">settimer, autoheal, 180 <br><p>"settimer" sets timer, "settimer, autoheal" autoheal is makes work as loop, "settimer, autoheal, 180" 180 is millisecond like "sleep", put this to "weapon=1" below... </p><br>
+  <p style="color:red;">Toggle:=!Toggle<br><p> </p><br>
+  <p style="color:red;">autoheal:<br></p><p> It is used as "VARIABLE: "because "settimer is VARIABLE, 180 ". We use "autoheal:" because we use "settimer, autoheal, 180"</p><br>
+  <p style="color:red;">if !Toggle<br></p><p> If we use "if !Toggle" while in "Toggle:=!Toggle", we will open the Toggle loop.</p><br>
+<p>asking for more information : <a href="https://www.autohotkey.com/docs/v1/lib/SetTimer.htm" style="color:red">Settimer, </a> <a href="" style="color:red"></a> <a href="https://www.autohotkey.com/boards/viewtopic.php?t=33916" style="color:red">Toggle=!Toggle,</a> <a href="https://www.autohotkey.com/docs/v1/lib/IfExpression.htm" style="color:red">If</a></p>
+ <a href="hatmacros.html" class="button-like">back to Macros <</a>
+ <a href="pixelsearch.html" class="button-like">Next to Toggle Loop ></a>
+ <p>Yes, we have come to the end of our API, if you find an error, please do not be angry with us immediately. just tell us your mistake, we will fix it in the next update. <br> Made by with İlyax</p>
+</div>
+
+
+
+
+</body>
+</html>
