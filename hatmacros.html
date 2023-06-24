@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+<title>Hat Macros | Sploop.ahk</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="index.js"></script>
+
+</head>
+
+<body>
+<div class="tab">
+  <a class="tablinks" href="Home.html">Home</a><br>
+  <a class="tablinks" href="macros.html">Macros</a><br>
+  <a class="tablinks" style="color:red;" href="hatmacros.html">Hat macros</a><br>
+  <a class="tablinks" href="toggleloop.html">Toggle Loop</a><br>
+</div>
+
+<div class="content">
+<h1>Creating HatMacros</h1><br>
+<p>If you are having trouble choosing a hat, these codes are for you. let's start You Need a Cordinate Selector. Download by clicking <a href="https://cdn.discordapp.com/attachments/1121564828071362780/1122167520992956567/coordinates.ahk" style="color:red">Here</a></p>
+<div class="kodlar">
+<pre><code class="autohotkey">
+*$~Z::
+Send, n
+Sleep, 180
+MouseGetPos, MX, MY
+Click, Your Hat Clicking Positions
+Sleep, 20
+MouseMove, %MX%, %MY%
+Send, n
+Return
+</code></pre>
+  <button class="copy-btn" onclick="copyCode(event)">Copy</button>
+</div>
+<p style="color:red;">*$~Z:: <br></p><p> When you press Z, it will add a Spike. If you want to change it, you can put any key you want instead of Z.</p><br>
+  <p style="color:red;">Send, N <br><p> "Send" is a code that is always used to send something. "Send, N" is opening Shop for you, if you changed other key then Change Shop open button instead KEY "Send, KEY"</p><br>
+  <p style="color:red;">Sleep, 180<br><p> "Sleep" Sleep waits in milliseconds. if you set Sleep it will wait for 1000 then it will wait for 1 second if you set it for 500 then it will wait for 0.5 seconds.</p><br>
+  <p style="color:red;">MouseGetPos, MX, MY<br><p>Mousegetpos of course takes the coordinates where it is on the mouse.</p><br>
+  <p style="color:red;">Click, Your Hat Clicking Positions<br><p>"Click" clicks according to your position. If Click, you make 0, 0 then it goes towards 0, 0. I am giving an example in the Shop you get from the coordinate, you will place the position of the Berserker button on this "Your Hat Clicking Positions"</p><br>
+  <p style="color:red;">MouseMove, %MX%, %MY%<br></p><p>If "Mousemove, 0, 0" moves towards 0, 0. Just like Click, 0, 0, but the difference of click is that after clicking on that coordinate, mousemove only goes there.</p><br>
+  <p style="color:red;">Return <br></p><p> "Return" is used for after the code is run</p><br><br><br>
+  <p>asking for more information : <a href="https://www.autohotkey.com/docs/v1/lib/Sleep.htm" style="color:red">Sleep, </a> <a href="" style="color:red"></a> <a href="https://www.autohotkey.com/docs/v1/lib/MouseGetPos.htm" style="color:red">MouseGetPos,</a> <a href="https://www.autohotkey.com/docs/v1/lib/Click.htm" style="color:red">Click,</a> <a href="https://www.autohotkey.com/docs/v1/lib/MouseMove.htm" style="color:red">MouseMove</a></p>
+ <a href="macros.html" class="button-like">back to Macros <</a>
+ <a href="toggleloop.html" class="button-like">Next to Toggle Loop ></a>
+ <p>Made by with İlyax</p>
+</div>
+
+
+
+
+</body>
+</html>
