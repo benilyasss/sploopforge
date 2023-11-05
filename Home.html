@@ -3,69 +3,10 @@
 <title>Introduction | Sploop.ahk</title>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <script src="index.js"></script>
-<meta property="og:title" content="Sploop.io Forge">
-<meta property="og:description" content="Creating Autohotkey for sploop.io with using our Turpin mod Api">
-<meta property="og:url" content="https://benilyasss.github.io/sploopforge/Home.html">
 
 </head>
 
 <body>
-<div class="tab">
-  <a class="tablinks" style="color:red;" href="Home.html">Home</a><br>
-  <a class="tablinks" href="macros.html">Macros</a><br>
-  <a class="tablinks" href="hatmacros.html">Hat macros</a><br>
-  <a class="tablinks" href="toggleloop.html">Toggle Loop</a><br>
-</div>
 
-  <div class="content">
-    <h1>Introduction Sploop.ahk</h1>
-	<p>Sploop.ahk is made easy to use as a powerful api. Api specially tuned for our popular game Sploop.io both improves your gaming experience.</p><br>
-
-	<h2>Let's start the API using these codes.</h2><br>
-	<p>This code is used to make Autohotkey even more powerful. now let's start by putting this code in the first line</p><br>
-  <div class="kodlar">
-<pre><code class="autohotkey">
-#SingleInstance Force
-#NoEnv
-#IfWinActive, Sploop.io - Fast paced combat game
-#MaxThreadsPerHotkey 2
-#MaxHotkeysPerInterval 99000000
-#HotkeyInterval 99000000
-#KeyHistory 0
-Process, Priority, , A
-SetBatchLines, -1
-SetKeyDelay, -1, -1, -1
-SetMouseDelay, -1
-SetDefaultMouseSpeed, 0
-SetWinDelay, -1
-SetControlDelay, -1
-weapon=1
-
-; We will always put the codes here, so do not put the codes above!!!
-
-*$~1::weapon=1
-*$~2::weapon=2
-
-*$~Enter::
-suspend
-pause,,1
-Return
-</code></pre>
-    <button class="copy-btn" onclick="copyCode(event)">Copy</button>
-  </div>
-<p>After installing this, please, if there is an error in the codes or codes that cannot be found, please visit on our <a href="https://discord.gg/WXpTH55csw">Discord</a> server. And tell us.</p>
-<br>
-<br>
-<a href="macros.html" class="button-like">Next to Macros ></a>
-<p>Made by with İlyax</p>
-
-
-
-
-  </div>
-
-<script>
-	notify('Hi', 'Hello!', 3000); // 3 saniye boyunca görüntülenecek
-</script>
 </body>
 </html>
